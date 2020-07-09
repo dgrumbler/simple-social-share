@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<title>Simple Social Share Bar</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<style type="text/css">
+		/*------- Social Sharing Buttons ------------------*/
+
+.socialshare ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: 100%;
+}
+.socialshare li {
+	flex-grow: 1;
+}
+.socialshare h5 {
+	font-size: 1.4rem;
+	font-style: italic;
+	line-height: 20px;
+	margin-right: 10px;
+}
+/* General Link Styling */
+.socialshare a,
+.socialshare a:visited {
+	display: block;
+	padding: 10px 20px;
+	transition: opacity 0.5s linear; 
+	text-align: center;
+}
+.socialshare a:hover,
+.socialshare a:focus {
+	opacity: 0.8;
+	color: #ffffff;
+	transition: opacity 0.5s linear;
+}
+/* Individual Button Styles */
+.socialshare .facebook {
+	background-color: #3b5998;
+	color: #ffffff;
+}
+.socialshare .twitter {
+	background-color: #00acee;
+	color: #ffffff;
+}
+.socialshare .linkedin {
+	background-color: #0e76a8;
+	color: #ffffff;
+}
+
+.socialshare .mail {
+	background-color: #D44638;
+	color: #ffffff;
+}
+
+/*------- End Social Sharing Buttons ------------------*/
+/* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+	    
+	    /* SOCIAL SHARE BAR */
+	    .socialshare {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.socialshare ul {
+			width: auto;
+		}
+		.socialshare li {
+			flex-grow: auto;
+		}
+		/* END SOCIAL SHARE BAR */
+	}
+	</style>
+</head>
+<body>
+	<h1>Simple Social Share Bar</h1>
+	<p>This is a copy of the HTML version. There is a php version included as well.</p>
+	<p>Replace any &glt;&lgt;Keywords&grt;&rgt; with the relelvant information e.g. &lgt;&lgt;URL&rgt;&rgt; would be replaced with your page's URL</p>
+	<nav role="toolbar" class="socialshare">
+		<h5 id="socialshare">
+			Share this article: 
+		</h5>
+		<ul>
+			<li>
+				<a class="facebook" href="http://www.facebook.com/dialog/feed?app_id=<<FACEBOOK APP ID>>&redirect_uri=<<REDIRECT URL>>&link='<<URL>>&display=popup" target="_blank" title="Share <<ARTICLE TITLE>> on Facebook" aria-label="Share '<<ARTICLE TITLE>> on Facebook">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a class="twitter" href="https://twitter.com/intent/tweet?text=<<ARTICLE TITLE>>&url=<<URL>>" target="_blank" title="Share <<ARTICLE TITLE>> on Twitter" aria-label="Share <<ARTICLE TITLE>> on Twitter">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<<URL>>&amp;title=<<ARTICLE TITLE>>&amp;summary=<<ARTICLE SUMMARY>>&amp;source=<<SITE TITLE>>" target="_blank" title="Share <<ARTICLE TITLE>> on LinkedIn" aria-label="Share <<ARTICLE TITLE>> on LinkedIn">
+					<i class="fa fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a class="mail" href="mailto:?subject=<<ARTICLE TITLE>>&amp;body=<<URL>>" target="_blank" title="Share <<ARTICLE TITLE>> via email" aria-label="Share <<ARTICLE TITLE>> via email">
+
+					<i class="fa fa-envelope"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<br /><br />
+</body>
+</html>
